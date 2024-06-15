@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PepsiApp.MainPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="Black">
+
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Image Source="pepsi_inicio.jpeg" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" WidthRequest="300" HeightRequest="150" Margin="0,0,0,10"/>
+        <Label Text="Iniciar Sesión" TextColor="Blue" FontSize="Large" FontAttributes="Bold" Margin="0,0,0,20" HorizontalOptions="Center"/>
+
+        <Entry x:Name="UsuarioEntry" Placeholder="Usuario" Margin="10" BackgroundColor="White" WidthRequest="300" />
+        <Entry x:Name="ContraseñaEntry" Placeholder="Contraseña" IsPassword="True" Margin="10" BackgroundColor="White" WidthRequest="300" />
+
+        <Button x:Name="btnIniciarSesion"  Text="Iniciar Sesión" BackgroundColor="Purple" TextColor="White" Margin="0,0,0,10" WidthRequest="300" Clicked="btnIniciarSesionn"/>
+        <Button x:Name="btnRegistrarse" Text="Registrarse" BackgroundColor="Purple" TextColor="White" WidthRequest="300" />
+    </StackLayout>
+
+</ContentPage>
